@@ -1,0 +1,27 @@
+{
+  "name": "Generic Project",
+  "version": "1.0.0",
+  "description": "Generic Project",
+  "main": "main.js",
+  "scripts": {
+    "build": "webpack",
+    "build:watch": "webpack --watch",
+    "test": "mocha --compilers js:babel-core/register",
+    "test:watch": "mocha --compilers js:babel-core/register --watch --recursive test/*.js"
+  },
+  "author": "Geordan Rosario <geordan@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "babel-core": "latest",
+    "babel-preset-es2015": "latest",
+    "redux": "latest"
+  },
+  "devDependencies": {
+    "babel-loader": "latest",
+    "chai": "latest",
+    "eslint": "latest",
+    "jsx-loader": "latest",
+    "mocha": "latest",
+    "webpack": "latest"
+  }
+}

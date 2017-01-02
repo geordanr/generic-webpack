@@ -1,0 +1,10 @@
+.sw?
+*.sw?
+*.iml
+*.pprof
+
+dist
+input_files
+node_modules
+tags
+_vimrc_local.vim
