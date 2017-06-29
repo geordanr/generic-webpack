@@ -6,8 +6,8 @@
   "scripts": {
     "build": "webpack",
     "build:watch": "webpack --watch",
-    "test": "mocha --compilers js:babel-core/register",
-    "test:watch": "mocha --compilers js:babel-core/register --watch --recursive test/*.js"
+    "test": "mocha --require source-map-support/register --require babel-register",
+    "test.watch": "mocha --require babel-register --watch --recursive test/*.js"
   },
   "author": "Geordan Rosario <geordan@gmail.com>",
   "license": "MIT",
@@ -18,10 +18,13 @@
   },
   "devDependencies": {
     "babel-loader": "latest",
+    "babel-plugin-transform-builtin-extend": "latest",
+    "babel-register": "latest",
     "chai": "latest",
     "eslint": "latest",
     "jsx-loader": "latest",
     "mocha": "latest",
+    "source-map-support": "latest",
     "webpack": "latest"
   }
 }
